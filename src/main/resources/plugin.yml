@@ -1,0 +1,10 @@
+name: ServerMessage
+main: servermessage
+version: 0.1
+
+commands:
+   welcome:
+      description: This is the welcome command.
+      usage: /welcome
+      permission: servermessage.welcome
+      permission-message: You don't have the permission to welcome [player]
