@@ -4,7 +4,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
- * Created by Soundofdarkness on 06.04.2016.
+ * Edit Soundofdarkness 07.04.16
  */
 
     public class servermessage extends JavaPlugin {
@@ -19,7 +19,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
         public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
             if(cmd.getName().equalsIgnoreCase("welcome")){ // Wenn /welcome ausgeführt wird wird ein Willkommen in den chat geschrieben
-                sender.sendMessage(ChatColor.GOLD + "Willkommen auf dem MMO-Server der Lux Caeli!");
+                getServer().broadcastMessage(ChatColor.GOLD + "Willkommen auf dem MMO-Server der Lux Caeli!");
                 this.getLogger().info( "Welcomed new players on the server");
                 return true;
             } // Wenn das passiert, wird die Funktion abbrechen und true als Wert zurückgeben.
